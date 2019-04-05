@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "ts-node --files src/server.ts",
+    "start": "nodemon",
     "prod": "node lib/server.js",
     "clean": "rm -rf lib",
     "test": "jest",
@@ -31,6 +31,7 @@
     "@types/jest": "24.0.11",
     "@types/node": "11.13.0",
     "jest": "24.7.1",
+    "nodemon": "1.18.10",
     "prettier": "1.16.4",
     "ts-jest": "24.0.1",
     "ts-node": "8.0.3",
