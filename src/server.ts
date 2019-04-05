@@ -1,4 +1,7 @@
-console.log("Starting server")
+import * as debug from "debug"
+const log = debug("server")
+
+log("Starting server")
 
 import * as express from "express"
 import { api } from "./api";
@@ -14,5 +17,5 @@ server.use(bodyParser.json())
 server.use("/api", api)
 
 server.listen(serverPort, () => {
-  console.log(`Server started at port ${serverPort}`)
+  log(`Server started at port ${serverPort}`)
 })
