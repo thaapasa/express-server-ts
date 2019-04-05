@@ -1,7 +1,7 @@
 import secureRandomNumber = require('random-number-csprng');
 
 export function getRandomNumber() {
-  return 4; // Taken from an example implementation at xkcd
+  return 4; // See https://xkcd.com/221/
 }
 
 export async function getSecureRandomNumber(): Promise<number> {
