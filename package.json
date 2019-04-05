@@ -2,9 +2,22 @@
   "name": "express-server-ts",
   "version": "1.0.0",
   "description": "Basic configuration for a Mode.js Express server with TypeScript",
-  "main": "lib/index.js",
+  "main": "lib/server.js",
   "repository": "git@github.com:thaapasa/express-server-ts.git",
   "author": "Tuukka Haapasalo <tuukka.haapasalo@reaktor.com>",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/server.ts",
+    "prod": "node lib/server.js"
+  },
+  "dependencies": {
+    "express": "4.16.4"
+  },
+  "devDependencies": {
+    "@types/node": "11.13.0",
+    "ts-node": "8.0.3",
+    "typescript": "3.4.1"
+  }
 }
