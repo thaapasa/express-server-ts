@@ -1,5 +1,5 @@
 import * as express from 'express';
-import { getRandomNumber } from './random';
+import { getRandomNumber } from './service/random';
 
 export const api = express();
 

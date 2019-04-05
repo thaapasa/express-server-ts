@@ -8,6 +8,7 @@
     "outDir": "./lib",
     "sourceMap": true,
     "noEmitOnError": true,
+    "allowSyntheticDefaultImports": true,
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
