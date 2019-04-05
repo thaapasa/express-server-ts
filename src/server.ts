@@ -1,4 +1,7 @@
-import * as debug from 'debug';
+import * as dotenv from 'dotenv';
+dotenv.config();
+
+import debug from 'debug';
 const log = debug('server');
 
 log('Starting server');
