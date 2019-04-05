@@ -11,7 +11,8 @@
     "build": "tsc",
     "start": "DEBUG=server* ts-node src/server.ts",
     "prod": "node lib/server.js",
-    "clean": "rm -rf lib"
+    "clean": "rm -rf lib",
+    "lint": "tslint --project ."
   },
   "dependencies": {
     "body-parser": "1.18.3",
