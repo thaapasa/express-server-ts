@@ -9,7 +9,7 @@
   "private": true,
   "scripts": {
     "build": "tsc",
-    "start": "ts-node src/server.ts",
+    "start": "ts-node --files src/server.ts",
     "prod": "node lib/server.js",
     "clean": "rm -rf lib",
     "test": "jest",
@@ -20,7 +20,8 @@
     "compression": "1.7.4",
     "debug": "4.1.1",
     "dotenv": "7.0.0",
-    "express": "4.16.4"
+    "express": "4.16.4",
+    "random-number-csprng": "1.0.2"
   },
   "devDependencies": {
     "@types/compression": "0.0.36",
